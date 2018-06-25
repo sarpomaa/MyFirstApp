@@ -39,27 +39,67 @@
   position: absolute;
   right: 1%;
   }
+
+  .item2{
+    position: absolute;
+    right: 20%;
+  }
+
+  .head{
+    border: 1px solid blue;
+    width: 80%;
+  }
+
+  .tab{
+    border-spacing: 20px;
+  }
+
 </style>
   
   </head>
   <body>
     
-    <div data-role="page" id="page1">
+    <div data-role="page">
       
       <div data-role="header">
-        <h1>Header</h1>
+        <h1>SERVICES</h1>
         <!-- <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext"></a> -->
-        <!-- <a href="#"><i class="fa fa-arrow-alt-circle-left"></i></a>  -->
+        <a href="#"><i class="fa fa-arrow-alt-circle-left"></i></a>
       </div><!-- /header -->
 
-      <div data-role="main" class="ui-content"> 
-        <p><center>Welcome to MyApp!</center></p>
-        <br><br><br><br><br>
-        <form ><a href="#page2"></a><input type="submit" value="Find Items"/>
-        </form>
-        <br><br><br>
-        <form action=""><input type="submit" value="Find HandyMan"/>
-        </form>
+      <div data-role="content">
+        <center><img src="test.png" alt="intro" width="80%" height="200"/></center>
+        <table class="tab">
+          <tr>
+            <td colspan="5" class="head"><center>
+              BROWSE CATEGORIES
+            </td></center>
+          </tr>
+          <tr>
+            <td><a href="google.com"><img src="test.png" alt="plumbing" width="200" height="200">
+            </a>
+            <p>Details</p>
+            </td>
+            <td>
+            <a href="google.com"><img src="test.png" alt="Gardening" width="200" height="200">
+            </a>
+            <p>Details</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="google.com"><img src="test.png" alt="Carpentry" width="200" height="200">
+              </a>
+              <p>Details</p>
+              </td>
+              <td>
+              <a href="google.com"><img src="test.png" alt="Electricals" width="200" height="200">
+              </a>
+              <p>Details</p>
+            </td>
+          </tr>
+        </table>
+        
       </div><!-- /content -->
 
       <div data-role="footer" data-position="fixed">
@@ -67,28 +107,6 @@
         <a class="searchicon" href="#"><i class="fa fa-search"></i></a> 
         <a class="usericon" href="#"><i class="fa fa-user-circle"></i></a> 
       </div><!-- /footer -->
-
-      <div data-role="page" id="page2"> 
-        
-        <br><br><br><br><br>
-        <a href="google.com"><img src="test.png" alt="Item 1" width="200" height="200">
-        </a>
-        <p>Price and other details</p>
-        <br><br><br>
-        <a class="item2" href="google.com"><img src="test.png" alt="Item 2" width="200" height="200">
-        </a>
-        <p>Price and other details</p>
-        <br><br><br>
-        <a href="google.com"><img src="test.png" alt="Item 3" width="200" height="200">
-        </a>
-        <p>Price and other details</p>
-        <br><br><br>
-        <a href="google.com"><img src="test.png" alt="Item 4" width="200" height="200">
-        </a>
-        <p>Price and other details</p>
-        <br><br><br>
-        
-      </div>
  
     </div><!-- /page -->
     

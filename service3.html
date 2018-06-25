@@ -29,66 +29,74 @@
   <script src="js/app/bootstrap.js"></script>
   <script src="js/lib/jquery.mobile.js"></script>
 
-  <style>
-.searchicon {
+<style>
+  .searchicon {
     position: absolute;
     right: 20%;
   }
 
-.usericon{
+  .usericon{
   position: absolute;
   right: 1%;
   }
+
+  .div{
+    position: relative; 
+    width: 80%; 
+    margin-left: 10%;
+    height: 350px; 
+    background-color: white;
+    border:1px black solid;
+  }
+
+  .bold{
+    font-weight: bold;
+  }
+
+  .button{
+    width: 30%;
+  }
+
 </style>
   
   </head>
   <body>
     
-    <div data-role="page" id="page1">
+    <div data-role="page">
       
       <div data-role="header">
-        <h1>Header</h1>
+        <h1>SERVICES</h1>
         <!-- <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext"></a> -->
-        <!-- <a href="#"><i class="fa fa-arrow-alt-circle-left"></i></a>  -->
+        <a href="#"><i class="fa fa-arrow-alt-circle-left"></i></a>
       </div><!-- /header -->
 
-      <div data-role="main" class="ui-content"> 
-        <p><center>Welcome to MyApp!</center></p>
-        <br><br><br><br><br>
-        <form ><a href="#page2"></a><input type="submit" value="Find Items"/>
-        </form>
-        <br><br><br>
-        <form action=""><input type="submit" value="Find HandyMan"/>
-        </form>
-      </div><!-- /content -->
+      <div data-role="content">
+        <center><img src="test.png" alt="intro" width="80%" height="200"/></center>
+
+    <div class="div">
+      <form>
+        <fieldset>
+          <legend class="bold"><center>CONFIRM HANDYMAN</center></legend>
+          <p class="bold">EXPERTISE: <input type="" name="price" id=""></p>
+          <p class="bold">LOCATION: <input type="" name="distance" id=""></p>
+          <p class="bold">WORKING HOURS: <input type="" name="working hours" id=""></p>
+          <p class="bold">CONTACT INFO: <input type="" name="working hours" id=""></p>
+          <p class="bold">RATING: <input type="" name="working hours" id=""></p>
+          <br>
+          
+          <button type="button" onclick="pending" class="button">YES</button> 
+          <button type="button" onclick="services2.html" class="button">NO</button> 
+          <br>
+        </fieldset>
+      </form>
+    </div> 
+  </div><!-- /content -->
 
       <div data-role="footer" data-position="fixed">
         <a class="active" href="#"><i class="fa fa-home"></i></a> 
         <a class="searchicon" href="#"><i class="fa fa-search"></i></a> 
         <a class="usericon" href="#"><i class="fa fa-user-circle"></i></a> 
       </div><!-- /footer -->
-
-      <div data-role="page" id="page2"> 
-        
-        <br><br><br><br><br>
-        <a href="google.com"><img src="test.png" alt="Item 1" width="200" height="200">
-        </a>
-        <p>Price and other details</p>
-        <br><br><br>
-        <a class="item2" href="google.com"><img src="test.png" alt="Item 2" width="200" height="200">
-        </a>
-        <p>Price and other details</p>
-        <br><br><br>
-        <a href="google.com"><img src="test.png" alt="Item 3" width="200" height="200">
-        </a>
-        <p>Price and other details</p>
-        <br><br><br>
-        <a href="google.com"><img src="test.png" alt="Item 4" width="200" height="200">
-        </a>
-        <p>Price and other details</p>
-        <br><br><br>
-        
-      </div>
  
     </div><!-- /page -->
     

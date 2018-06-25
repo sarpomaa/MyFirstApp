@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>phonegap & jquery mobile boilerplate</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+
+  <link rel="stylesheet"  href="css/jquery.mobile.structure.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.theme.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <script>
+    var userAgent = navigator.userAgent + '';
+    if (userAgent.indexOf('iPhone') > -1) {
+      document.write('<script src="js/lib/cordova-iphone.js"></sc' + 'ript>');
+      var mobile_system = 'iphone';
+    } else if (userAgent.indexOf('Android') > -1) {
+      document.write('<script src="js/lib/cordova-android.js"></sc' + 'ript>');
+      var mobile_system = 'android';
+    } else {
+      var mobile_system = '';
+    }
+  </script>
+  
+  <script src="js/lib/jquery.js"></script>
+  <!-- your scripts here -->
+  <script src="js/app/app.js"></script>
+  <script src="js/app/bootstrap.js"></script>
+  <script src="js/lib/jquery.mobile.js"></script>
+
+  <style>
+  .searchicon {
+    position: absolute;
+    right: 20%;
+  }
+
+  .usericon{
+    position: absolute;
+    right: 1%;
+  }
+
+  .item2{
+    position: absolute;
+    right: 20%;
+  }
+
+  .head{
+    border: 1px solid blue;
+    width: 80%;
+    text-align: center;
+  }
+
+  .tab{
+    border-spacing: 20px;
+  }
+
+  .tab1{
+    border: 1px solid blue;
+  }
+
+  *{
+    box-sizing: border-box;
+  }
+
+  .column{
+    float: left;
+    padding: 20px;
+  }
+
+  .left{
+    width: 25%;
+  }
+
+  .right{
+    width: 75%;
+    
+  }
+
+  .row{
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .search{
+    width: 100%;
+    position: relative;
+  }
+
+  .searchTerm{
+    float: left;
+    width: 100%;
+    border: 3px solid #00B4CC;
+    padding: 2px;
+    height: 20px;
+    border-radius: 5px;
+    outline: none;
+    color: #9DBFAF;
+  }
+
+  .searchTerm:focus{
+    color: #00B4CC;
+  }
+
+  .searchButton{
+    position: absolute;
+    right: -50px;
+    width: 40px;
+    height: 36px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .wrap{
+    width: 50%;
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+</style>
+  
+  </head>
+  <body>
+    
+    <div data-role="page">
+      
+      <div data-role="header">
+        <h1>SEARCH</h1>
+        <a href="#"><i class="fa fa-arrow-alt-circle-left"></i></a>
+      </div><!-- /header -->
+
+     <div data-role="content">
+        <div class="wrap">
+          <div class="search">
+            <input type="text" class="searchTerm" placeholder="something">
+            <button type="submit" class="searchButton">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+
+        <div>
+          <div class="column left">
+            <a href="google.com"><img src="test.png" alt="Shop logo or picture" width="200" height="200">
+            </a>
+            <a href="google.com"><img src="test.png" alt="Shop logo or picture" width="200" height="200">
+            </a>
+            <a href="google.com"><img src="test.png" alt="Shop logo or picture" width="200" height="200">
+            </a>
+            <a href="google.com"><img src="test.png" alt="Shop logo or picture" width="200" height="200">
+            </a>
+          </div>
+
+            <div class="column right">
+              <br><br>
+              <p>Price</p>
+              <p>Distance</p>
+              <p>Working hours</p>
+              <br><br><br><br><br>
+              <p>Price</p>
+              <p>Distance</p>
+              <p>Working hours</p>
+              <br><br><br><br><br>
+              <p>Price</p>
+              <p>Distance</p>
+              <p>Working hours</p>
+              <br><br><br><br><br>
+              <p>Price</p>
+              <p>Distance</p>
+              <p>Working hours</p>
+          </div>
+        </div>
+      </div><!-- /content -->
+
+      <div data-role="footer" data-position="fixed">
+        <a class="active" href="#"><i class="fa fa-home"></i></a> 
+        <a class="searchicon" href="#"><i class="fa fa-search"></i></a> 
+        <a class="usericon" href="#"><i class="fa fa-user-circle"></i></a> 
+      </div><!-- /footer -->
+ 
+    </div><!-- /page -->
+    
+  </body>
+</html>
