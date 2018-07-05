@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
   <meta charset="utf-8">
   <title>phonegap & jquery mobile boilerplate</title>
   
@@ -23,14 +23,14 @@
     }
   </script>
   
-  <script src="js/lib/jquery.js"></script>
+  <!-- <script src="js/lib/jquery.js"></script> -->
   <!-- your scripts here -->
   <script src="js/app/app.js"></script>
-  <script src="js/app/bootstrap.js"></script>
-  <script src="js/lib/jquery.mobile.js"></script>
+  <!-- <script src="js/app/bootstrap.js"></script>
+    <script src="js/lib/jquery.mobile.js"></script> -->
 
-  <style>
-  .searchicon {
+    <style>
+  /*.searchicon {
     position: absolute;
     right: 20%;
   }
@@ -81,73 +81,57 @@
     content: "";
     display: table;
     clear: both;
-  }
-</style>
+    }*/
+  </style>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
   
-  </head>
-  <body>
+  <div data-role="page">
     
-    <div data-role="page">
-      
-      <div data-role="header">
-        <h1>SERVICES</h1>
-        <!-- <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext"></a> -->
-        <a href="#"><i class="fa fa-arrow-alt-circle-left"></i></a>
-      </div><!-- /header -->
+    <div data-role="header" data-position="fixed" style="background:#990033; text-align:center; color:white; text-shadow: none;">
+      <a class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-notext" style="background:#990033; border: none;" data-back-btn-text="Back" data-add-back-btn="true" href="service1.html">Icon only</a>
+      <h1>SERVICES</h1>
+    </div><!-- /header -->
 
-       <div data-role="content">
-        <center><img src="test.png" alt="intro" width="80%" height="200"/></center>
-        <table class="tab">
-          <tr>
-            <td colspan="5" class="head"><center>
-              CHOOSE HANDYMAN
-            </td></center>
-          </tr>
-        </table>
+    <div data-role="content">
+      <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Search categories...">
+        <li><a href="service3.html" data-ajax="false">
+          <img src="img/handyman.jpg">
+          <h2>KOFI</h2>
+          <p>Rating: 4</p>
+          <p>Experience Level: 4</p></a>
+        </li>
+        <li><a href="service3.html" data-ajax="false">
+          <img src="img/handyman.jpg">
+          <h2>DAVID</h2>
+          <p>Rating: 4</p>
+          <p>Experience Level: 4</p></a>
+        </li>
+        <li><a href="service3.html" data-ajax="false">
+          <img src="img/handyman.jpg">
+          <h2>Maxwell</h2>
+          <p>Rating: 5</p>
+          <p>Experience Level: 4</p></a>
+        </li>
+        <li><a href="service3.html" data-ajax="false">
+          <img src="img/handyman.jpg">
+          <h2>PATRICK</h2>
+          <p>Rating: 3</p>
+          <p>Experience Level: 4</p></a>
+        </li>
+      </ul>
+    </div><!-- /content -->
 
-        <div>
-          <div class="column left">
-            <a href="google.com"><img src="test.png" alt="Shop logo or picture" width="200" height="200">
-            </a>
-            <a href="google.com"><img src="test.png" alt="Shop logo or picture" width="200" height="200">
-            </a>
-            <a href="google.com"><img src="test.png" alt="Shop logo or picture" width="200" height="200">
-            </a>
-            <a href="google.com"><img src="test.png" alt="Shop logo or picture" width="200" height="200">
-            </a>
-          </div>
-
-            <div class="column right">
-              <br>
-              <p>Name:</p>
-              <p>Expertise:</p>
-              <p>Rating:</p>
-              <p>Location:</p>
-              <br><br><br>
-              <p>Name:</p>
-              <p>Expertise:</p>
-              <p>Rating:</p>
-              <p>Location:</p>
-              <br><br><br>
-              <p>Name:</p>
-              <p>Expertise:</p>
-              <p>Rating:</p>
-              <p>Location:</p>
-              <br><br><br>
-              <p>Name:</p>
-              <p>Expertise:</p>
-              <p>Rating:</p>
-              <p>Location:</p>
-          </div>
-      </div><!-- /content -->
-
-      <div data-role="footer" data-position="fixed">
-        <a class="active" href="#"><i class="fa fa-home"></i></a> 
-        <a class="searchicon" href="#"><i class="fa fa-search"></i></a> 
-        <a class="usericon" href="#"><i class="fa fa-user-circle"></i></a> 
-      </div><!-- /footer -->
- 
-    </div><!-- /page -->
+    <div data-role="footer" data-position="fixed" style="background:#990033; text-align:center; color:white; text-shadow: none;">
+      <a class="" href="index.html" data-ajax="false"><i class="fa fa-home"></i></a> 
+      <a class="searchicon" href="search1.html" data-ajax="false"><i class="fa fa-search"></i></a> 
+      <a class="usericon" href="profile.html" data-ajax="false"><i class="fa fa-user-circle"></i></a> 
+    </div><!-- /footer -->
     
-  </body>
+  </div><!-- /page -->
+  
+</body>
 </html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>phonegap & jquery mobile boilerplate</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+
+  <link rel="stylesheet"  href="css/jquery.mobile.structure.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.theme.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <script>
+    var userAgent = navigator.userAgent + '';
+    if (userAgent.indexOf('iPhone') > -1) {
+      document.write('<script src="js/lib/cordova-iphone.js"></sc' + 'ript>');
+      var mobile_system = 'iphone';
+    } else if (userAgent.indexOf('Android') > -1) {
+      document.write('<script src="js/lib/cordova-android.js"></sc' + 'ript>');
+      var mobile_system = 'android';
+    } else {
+      var mobile_system = '';
+    }
+  </script>
+  
+  <!-- <script src="js/lib/jquery.js"></script> -->
+  <!-- your scripts here -->
+  <script src="js/app/app.js"></script>
+  <!-- <script src="js/app/bootstrap.js"></script>
+    <script src="js/lib/jquery.mobile.js"></script> -->
+
+<!--<style>
+  .searchicon {
+    position: absolute;
+    right: 20%;
+  }
+
+  .usericon{
+  position: absolute;
+  right: 1%;
+  }
+
+  .div{
+    position: relative; 
+    width: 80%; 
+    margin-left: 10%;
+    /*height: 400px; */
+    background-color: white;
+    /*border:1px black solid;*/
+  }
+
+  .bold{
+    font-weight: bold;
+  }
+
+  .but{
+    width: 30%;
+  }-->
+
+</style>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+  <div data-role="page">
+
+    <div data-role="header" data-position= "fixed" style="background:#990033; text-align:center; color:white; text-shadow: none;">
+      <a class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-notext" style="background:#990033; border: none;" data-back-btn-text="Back" data-add-back-btn="true" href="search1.html">Icon only</a>
+      <h1>RATE</h1>
+      <!-- <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext"></a> -->
+      <!-- <a href="#"><i class="fa fa-arrow-alt-circle-left"></i></a> -->
+    </div><!-- /header -->
+
+    <div style="text-align: center">
+      <img src="img/rate.jpg" width="90%">
+    </div>
+
+    <div data-role="content">
+
+      <div class="div">
+        <form name="feedback" method="post" onsubmit="" action= "">
+
+          <h3>Rate the Handyman!</h3>
+          <p>Use a scale of 1 to 5; where 1 is Terrible, 2 is Poor, 3 is Good, 4 is Very Good and 5 is Excellent.</p>
+
+          <p class="bold">Professionalism: </p>
+         <form>
+            <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+              <input type="radio" name="radio-choice-h-6" id="radio-choice-h-6d" value="on" checked="checked">
+              <label for="radio-choice-h-6d">Terrible</label>
+              <input type="radio" name="radio-choice-h-6" id="radio-choice-h-6e" value="other">
+              <label for="radio-choice-h-6e">Good</label>
+              <input type="radio" name="radio-choice-h-6" id="radio-choice-h-6f" value="other">
+              <label for="radio-choice-h-6f">Excellent</label>
+            </fieldset>
+          </form>
+
+          <p class="bold">Punctuality: </p>
+
+          <form>
+            <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+              <input type="radio" name="radio-choice-h-6" id="radio-choice-h-6a" value="on" checked="checked">
+              <label for="radio-choice-h-6a">Terrible</label>
+              <input type="radio" name="radio-choice-h-6" id="radio-choice-h-6b" value="other">
+              <label for="radio-choice-h-6b">Good</label>
+              <input type="radio" name="radio-choice-h-6" id="radio-choice-h-6c" value="other">
+              <label for="radio-choice-h-6c">Excellent</label>
+            </fieldset>
+          </form>
+
+          <p class="bold">Service Rendered: </p>
+
+         <form>
+            <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+              <input type="radio" name="radio-choice-h-6" id="radio-choice-h-6a" value="on" checked="checked">
+              <label for="radio-choice-h-6a">Terrible</label>
+              <input type="radio" name="radio-choice-h-6" id="radio-choice-h-6b" value="other">
+              <label for="radio-choice-h-6b">Good</label>
+              <input type="radio" name="radio-choice-h-6" id="radio-choice-h-6c" value="other">
+              <label for="radio-choice-h-6c">Excellent</label>
+            </fieldset>
+          </form>
+
+          <p class="bold but">Overall Rating: </p>
+
+          <form>
+            <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+              <input type="radio" name="radio-choice-h-6" id="radio-choice-h-6a" value="on" checked="checked">
+              <label for="radio-choice-h-6a">Terrible</label>
+              <input type="radio" name="radio-choice-h-6" id="radio-choice-h-6b" value="other">
+              <label for="radio-choice-h-6b">Good</label>
+              <input type="radio" name="radio-choice-h-6" id="radio-choice-h-6c" value="other">
+              <label for="radio-choice-h-6c">Excellent</label>
+            </fieldset>
+          </form>
+          <br>
+
+          <h3>FEEDBACK AND COMMENTS</h3>
+
+          <div>
+            <textarea rows="10" cols="50" name="feedback"></textarea>
+          </div>
+          <div align="center">
+            <form>
+              <input onClick="window.location.href='rateDone.html'" type="submit" Value="Submit">
+            </form>
+          </div>
+          
+          <br>
+        </form>
+      </div> 
+    </div><!-- /content -->
+
+    <div data-role="footer" data-position="fixed" style="background:#990033; text-align:center; color:white; text-shadow: none;">
+      <a class="" href="index.html" data-ajax="false"><i class="fa fa-home"></i></a> 
+      <a class="searchicon" href="search1.html" data-ajax="false"><i class="fa fa-search"></i></a> 
+      <a class="usericon" href="profile.html" data-ajax="false"><i class="fa fa-user-circle"></i></a> 
+    </div><!-- /footer -->
+
+  </div><!-- /page -->
+
+</body>
+</html>

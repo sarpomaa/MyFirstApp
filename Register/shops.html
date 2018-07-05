@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>phonegap & jquery mobile boilerplate</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+
+
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  
+  <script>
+    var userAgent = navigator.userAgent + '';
+    if (userAgent.indexOf('iPhone') > -1) {
+      document.write('<script src="js/lib/cordova-iphone.js"></sc' + 'ript>');
+      var mobile_system = 'iphone';
+    } else if (userAgent.indexOf('Android') > -1) {
+      document.write('<script src="js/lib/cordova-android.js"></sc' + 'ript>');
+      var mobile_system = 'android';
+    } else {
+      var mobile_system = '';
+    }
+  </script>
+  
+  <!-- <script src="js/lib/jquery.js"></script> -->
+  <!-- your scripts here -->
+  <script src="js/app/app.js"></script>
+  <!-- <script src="js/app/bootstrap.js"></script> -->
+  <!-- <script src="js/lib/jquery.mobile.js"></script> -->
+ <!--  <script>
+    $(document).bind("mobileinit",function(){
+      $.mobile.page.prototype.options.addBackBtn=true;
+    });
+  </script> -->
+
+  <style>
+/*.searchicon {
+    position: absolute;
+    right: 20%;
+  }
+
+.usericon{
+  position: absolute;
+  right: 1%;
+  }
+
+  .item2{
+    position: absolute;
+    right: 20%;
+  }
+
+  .head{
+    border: 1px solid blue;
+    width: 80%;
+  }
+
+  .tab{
+    border-spacing: 20px;
+  }
+  */
+</style>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+  
+  <div data-role="page">
+    <div data-role="header" data-position="fixed" style="background:#990033; text-align:center; color:white; text-shadow: none;">
+      <a class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-notext" style="background:#990033; border: none;" data-back-btn-text="Back" data-add-back-btn="true" href="Login.html">Icon only</a>
+      <p>REGISTER</p>
+    </div><!-- /footer -->
+      <!-- <div style="background: #990033; position: fixed; top: 0px; width: 100%; height: 10%; text-align: center; color: white; text-shadow: none;">
+        <p>ITEMS</p>
+        <a href="#"><i class="fa fa-arrow-alt-circle-left" data-rel="back"></i></a>
+      </div> --><!-- /header -->
+        <!-- <div style="text-align: center">
+        <img src="img/shop.jpg" width="90%">
+      </div> -->
+      <div data-role="content">
+        <form>
+          <fieldset data-role="controlgroup">
+            <legend>Please select your Shop type:</legend>
+            <input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox">
+            <label for="checkbox-v-2a">Clothing</label>
+            <input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox">
+            <label for="checkbox-v-2b">Fresh Food</label>
+            <input name="checkbox-v-2c" id="checkbox-v-2c" type="checkbox">
+            <label for="checkbox-v-2c">Electronics</label>
+            <input name="checkbox-v-2d" id="checkbox-v-2d" type="checkbox">
+            <label for="checkbox-v-2d">Stationery</label>
+            <input name="checkbox-v-2e" id="checkbox-v-2e" type="checkbox">
+            <label for="checkbox-v-2e">Groceries</label>
+            <input name="checkbox-v-2f" id="checkbox-v-2f" type="checkbox">
+            <label for="checkbox-v-2f">Household</label>
+            <input name="checkbox-v-2g" id="checkbox-v-2g" type="checkbox">
+            <label for="checkbox-v-2g">Cosmetics</label>
+          </fieldset>
+        </form>
+
+   <!--      <form>
+        <fieldset data-role="controlgroup">
+        <legend>Please select your shop type:</legend>
+        <input name="radio-choice-v-2" id="radio-choice-v-2a" type="radio" checked="checked" value="on">
+        <label for="radio-choice-v-2a">Grocery Shop</label>
+        <input name="radio-choice-v-2" id="radio-choice-v-2b" type="radio" value="off">
+        <label for="radio-choice-v-2b">Clothing</label>
+        <input name="radio-choice-v-2" id="radio-choice-v-2c" type="radio" value="other">
+        <label for="radio-choice-v-2c">Electronics</label>
+        <input name="radio-choice-v-2" id="radio-choice-v-2d" type="radio" value="other">
+        <label for="radio-choice-v-2d">Stationery</label>
+        <input name="radio-choice-v-2" id="radio-choice-v-2e" type="radio" value="other">
+        <label for="radio-choice-v-2e">Fresh Food</label>
+    </fieldset>
+  </form> -->
+
+  <a class="ui-btn ui-btn-a" href="Page1.html">Finish</a>
+
+</div><!-- /content -->
+
+<div data-role="footer" data-position="fixed" style="background:#990033; text-align:center; color:white; text-shadow: none;">
+  <a class="" href="Login.html" data-ajax="false"><i class="fa fa-home"></i></a> 
+        <!-- <a class="searchicon" href="search1.html" data-ajax="false"><i class="fa fa-search"></i></a>  -->
+        <a class="usericon" href="profile.html" data-ajax="false"><i class="fa fa-user-circle"></i></a> 
+</div><!-- /footer -->
+
+</div><!-- /page -->
+
+</body>
+</html>
