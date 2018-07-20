@@ -40,13 +40,20 @@
   right: 1%;
   }
 
+  .usericon1{
+  position: absolute;
+  right: 50%;
+  /*width: 40%;
+  height: 40%;*/
+  }
+
   .div{
     position: relative; 
     width: 80%; 
     margin-left: 10%;
     height: 350px; 
     background-color: white;
-    border:1px black solid;
+    text-align: center;
   }
 
   .bold{
@@ -58,42 +65,31 @@
   }
 
 </style>
-  
-  </head>
+</head>
+
   <body>
     
     <div data-role="page">
       
       <div data-role="header">
-        <h1>ITEMS</h1>
+        <h1>USER PROFILE</h1>
         <!-- <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext"></a> -->
         <a href="#"><i class="fa fa-arrow-alt-circle-left"></i></a>
       </div><!-- /header -->
 
       <div data-role="content">
-        <h1><center>SHOP SELECTED</center></h1>
-        <center><img src="test.png" alt="intro" width="80%" height="200"/></center>
+        <a class="usericon1" href="#"><i class="fa fa-user-circle"></i></a> 
 
     <div class="div">
-      <form>
-        <fieldset>
-          <legend class="bold"><center>CONFIRM SHOP</center></legend>
-          <p class="bold">PRICE: <input type="" name="price"></p>
-          <p class="bold">DISTANCE: <input type="" name="distance"></p>
-          <p class="bold">WORKING HOURS: <input type="" name="working hours"></p>
-          <p class="bold">CONTACT INFO: <input type="" name="working hours"></p>
+          
+          <p class="bold">Name: </p>
+          <p class="bold">Preferences: </p>
+          <p class="bold">Help: </p>
+          <p class="bold">Requests: </p>
+          <p class="bold">Settings: </p>
+          <p class="bold">Logout: </p>
           <br>
           
-        <form action="Page1d.html" data-ajax="false"><input type="submit" value="YES"/>
-        </form>
-        <form action="Page1b.html" data-ajax="false"><input type="submit" value="NO"/>
-        </form>
-        <form action="Page1d.html" data-ajax="false"><input type="submit" value="YES"/>
-        </form>
-
-
-        </fieldset>
-      </form>
     </div> 
   </div><!-- /content -->
 

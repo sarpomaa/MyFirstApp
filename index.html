@@ -6,9 +6,10 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
 
-  <link rel="stylesheet"  href="css/jquery.mobile.structure.css" />
-  <link rel="stylesheet" href="css/jquery.mobile.theme.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
   
   <script>
     var userAgent = navigator.userAgent + '';
@@ -39,56 +40,36 @@
   position: absolute;
   right: 1%;
   }
+
+  .homeicon{
+    position: absolute;
+    right: 50%;
+  }
 </style>
   
   </head>
   <body>
     
-    <div data-role="page" id="page1">
+    <div data-role="page" id="page1" data-title="Welcome" data-theme="c">
       
-      <div data-role="header">
-        <h1>Header</h1>
+    <!--   <div data-role="header">
+        <h1>Header</h1> -->
         <!-- <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext"></a> -->
         <!-- <a href="#"><i class="fa fa-arrow-alt-circle-left"></i></a>  -->
-      </div><!-- /header -->
-
+      <!-- </div> -->
+      <!-- /header -->
+      <div style="text-align: center">
+        <img src="img/homelogo.jpg" width="90%">
+      </div>
+      
       <div data-role="main" class="ui-content"> 
-        <p><center>Welcome to MyApp!</center></p>
-        <br><br><br><br><br>
-        <form ><a href="#page2"></a><input type="submit" value="Find Items"/>
-        </form>
-        <br><br><br>
-        <form action=""><input type="submit" value="Find HandyMan"/>
+        <!-- <p><center>HANDY MAN</center></p> -->
+        <a class="ui-btn ui-btn-a" href="Page1.html">Find Items</a>
+        <a class="ui-btn ui-btn-b" href="service1.html">Find HandyMan</a>
         </form>
       </div><!-- /content -->
 
-      <div data-role="footer" data-position="fixed">
-        <a class="active" href="#"><i class="fa fa-home"></i></a> 
-        <a class="searchicon" href="#"><i class="fa fa-search"></i></a> 
-        <a class="usericon" href="#"><i class="fa fa-user-circle"></i></a> 
-      </div><!-- /footer -->
-
-      <div data-role="page" id="page2"> 
-        
-        <br><br><br><br><br>
-        <a href="google.com"><img src="test.png" alt="Item 1" width="200" height="200">
-        </a>
-        <p>Price and other details</p>
-        <br><br><br>
-        <a class="item2" href="google.com"><img src="test.png" alt="Item 2" width="200" height="200">
-        </a>
-        <p>Price and other details</p>
-        <br><br><br>
-        <a href="google.com"><img src="test.png" alt="Item 3" width="200" height="200">
-        </a>
-        <p>Price and other details</p>
-        <br><br><br>
-        <a href="google.com"><img src="test.png" alt="Item 4" width="200" height="200">
-        </a>
-        <p>Price and other details</p>
-        <br><br><br>
-        
-      </div>
+      
  
     </div><!-- /page -->
     

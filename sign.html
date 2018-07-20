@@ -62,33 +62,63 @@
 */
 </style>
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
   </head>
   <body>
     
     <div data-role="page">
       <div data-role="header" data-position="fixed" style="background:#990033; text-align:center; color:white; text-shadow: none;">
-        <a class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-notext" style="background:#990033; border: none;" data-back-btn-text="Back" data-add-back-btn="true" href="index.html">Icon only</a>
+        <a class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-notext" style="background:#990033; border: none;" data-back-btn-text="Back" data-add-back-btn="true" href="Login.html">Icon only</a>
         <p>ITEMS</p>
       </div><!-- /footer -->
       <!-- <div style="background: #990033; position: fixed; top: 0px; width: 100%; height: 10%; text-align: center; color: white; text-shadow: none;">
         <p>ITEMS</p>
         <a href="#"><i class="fa fa-arrow-alt-circle-left" data-rel="back"></i></a>
       </div> --><!-- /header -->
-
+        <!-- <div style="text-align: center">
+        <img src="img/shop.jpg" width="90%">
+      </div> -->
       <div data-role="content">
-        
-        
+
+     <form id="login">
+     <label for="text-1">Username or Email:</label>
+     <input name="username" id="text-1" type="text" value="">
+     <label for="password-1">Password: </label>
+     <input name="password-1" id="password-1" type="password" value="" data-clear-btn="false" autocomplete="off">
+</form>
+<a class="ui-btn ui-btn-inline" href="handy1.html">Artisan</a>
+<a class="ui-btn ui-btn-inline" href="shops1.html">Shop Owner</a>
+
+
+<!-- <a class="ui-btn ui-btn-a" href="Page1.html">Login</a> -->
+
+<p><a href="">Forgot Password?</a></p>
+
       </div><!-- /content -->
 
-      <div data-role="footer" data-position="fixed" >
-        <a class="" href="index.html" data-ajax="false"><i class="fa fa-home"></i></a> 
-        <a class="searchicon" href="search1.html" data-ajax="false"><i class="fa fa-search"></i></a> 
+      <div data-role="footer" data-position="fixed" style="background:#990033; text-align:center; color:white; text-shadow: none;">
+        <a class="" href="Login.html" data-ajax="false"><i class="fa fa-home"></i></a> 
+        <!-- <a class="searchicon" href="search1.html" data-ajax="false"><i class="fa fa-search"></i></a>  -->
         <a class="usericon" href="profile.html" data-ajax="false"><i class="fa fa-user-circle"></i></a> 
       </div><!-- /footer -->
  
     </div><!-- /page -->
     
   </body>
+
+  <script src="jquery.js" type="text/javascript"></script>
+<script>
+    $( "#login" ).on( "submit", function( event ) {
+        event.preventDefault();
+        var formData = $( "#login" ).serialize();
+
+        $.post("sign.php",formData,function (data){
+
+        alert(data);
+            
+        })
+    });
+</script>
+
 </html>

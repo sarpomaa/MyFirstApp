@@ -29,34 +29,58 @@
   <script src="js/app/bootstrap.js"></script>
   <script src="js/lib/jquery.mobile.js"></script>
 
-<style>
+  <style>
   .searchicon {
     position: absolute;
     right: 20%;
   }
 
   .usericon{
-  position: absolute;
-  right: 1%;
+    position: absolute;
+    right: 1%;
   }
 
-  .div{
-    position: relative; 
-    width: 80%; 
-    margin-left: 10%;
-    height: 350px; 
-    background-color: white;
-    border:1px black solid;
+  .search{
+    width: 100%;
+    position: relative;
   }
 
-  .bold{
-    font-weight: bold;
+  .searchTerm{
+    float: left;
+    width: 100%;
+    border: 3px solid #00B4CC;
+    padding: 0px;
+    height: 20px;
+    border-radius: 5px;
+    outline: none;
+    /*color: #9DBFAF;*/
   }
 
-  .button{
-    width: 30%;
+  /*.searchTerm:focus{
+    color: #00B4CC;
+  }*/
+
+  .searchButton{
+    position: absolute;
+    right: -50px;
+    width: 40px;
+    height: 36px;
+    border: 1px solid #00B4CC;
+    /*background: #00B4CC;*/
+    text-align: center;
+    /*color: #fff;*/
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
   }
 
+  .wrap{
+    width: 50%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    /*transform: translate(-50%, -50%);*/
+  }
 </style>
   
   </head>
@@ -65,37 +89,21 @@
     <div data-role="page">
       
       <div data-role="header">
-        <h1>ITEMS</h1>
-        <!-- <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext"></a> -->
+        <h1>SEARCH</h1>
         <a href="#"><i class="fa fa-arrow-alt-circle-left"></i></a>
       </div><!-- /header -->
 
-      <div data-role="content">
-        <h1><center>SHOP SELECTED</center></h1>
-        <center><img src="test.png" alt="intro" width="80%" height="200"/></center>
+     <div data-role="content">
+        <div class="wrap">
+          <div class="search">
+            <input type="text" class="searchTerm" placeholder="What are you searching for?">
+            <button type="submit" class="searchButton">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
 
-    <div class="div">
-      <form>
-        <fieldset>
-          <legend class="bold"><center>CONFIRM SHOP</center></legend>
-          <p class="bold">PRICE: <input type="" name="price"></p>
-          <p class="bold">DISTANCE: <input type="" name="distance"></p>
-          <p class="bold">WORKING HOURS: <input type="" name="working hours"></p>
-          <p class="bold">CONTACT INFO: <input type="" name="working hours"></p>
-          <br>
-          
-        <form action="Page1d.html" data-ajax="false"><input type="submit" value="YES"/>
-        </form>
-        <form action="Page1b.html" data-ajax="false"><input type="submit" value="NO"/>
-        </form>
-        <form action="Page1d.html" data-ajax="false"><input type="submit" value="YES"/>
-        </form>
-
-
-        </fieldset>
-      </form>
-    </div> 
-  </div><!-- /content -->
+      </div><!-- /content -->
 
       <div data-role="footer" data-position="fixed">
         <a class="" href="index.html" data-ajax="false"><i class="fa fa-home"></i></a> 

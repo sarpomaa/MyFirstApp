@@ -29,34 +29,61 @@
   <script src="js/app/bootstrap.js"></script>
   <script src="js/lib/jquery.mobile.js"></script>
 
-<style>
+  <style>
   .searchicon {
     position: absolute;
     right: 20%;
   }
 
   .usericon{
-  position: absolute;
-  right: 1%;
+    position: absolute;
+    right: 1%;
   }
 
-  .div{
-    position: relative; 
-    width: 80%; 
-    margin-left: 10%;
-    height: 350px; 
-    background-color: white;
-    border:1px black solid;
+  .item2{
+    position: absolute;
+    right: 20%;
   }
 
-  .bold{
-    font-weight: bold;
+  .head{
+    border: 1px solid blue;
+    width: 80%;
+    text-align: center;
   }
 
-  .button{
-    width: 30%;
+  .tab{
+    border-spacing: 20px;
   }
 
+  .tab1{
+    border: 1px solid blue;
+  }
+
+  *{
+    box-sizing: border-box;
+  }
+
+  .column{
+    float: left;
+    padding: 20px;
+  }
+
+  .left{
+    width: 25%;
+  }
+
+  .right{
+    width: 75%;
+    
+  }
+
+  .row{
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  
 </style>
   
   </head>
@@ -64,38 +91,47 @@
     
     <div data-role="page">
       
-      <div data-role="header">
-        <h1>ITEMS</h1>
-        <!-- <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext"></a> -->
+      <div data-role="header" data-id ="pend" data-position= "fixed">
+        <h1>SEARCH</h1>
         <a href="#"><i class="fa fa-arrow-alt-circle-left"></i></a>
       </div><!-- /header -->
 
-      <div data-role="content">
-        <h1><center>SHOP SELECTED</center></h1>
-        <center><img src="test.png" alt="intro" width="80%" height="200"/></center>
+        <div>
+          <div data-role="navbar">
+            <ul>
+              <li><a href="pending.html" data-ajax="false"> Pending</a></li>
+              <li><a href="completedAct.html" data-ajax="false">Completed</a></li>
+            </ul>
+          </div>
 
-    <div class="div">
-      <form>
-        <fieldset>
-          <legend class="bold"><center>CONFIRM SHOP</center></legend>
-          <p class="bold">PRICE: <input type="" name="price"></p>
-          <p class="bold">DISTANCE: <input type="" name="distance"></p>
-          <p class="bold">WORKING HOURS: <input type="" name="working hours"></p>
-          <p class="bold">CONTACT INFO: <input type="" name="working hours"></p>
-          <br>
-          
-        <form action="Page1d.html" data-ajax="false"><input type="submit" value="YES"/>
-        </form>
-        <form action="Page1b.html" data-ajax="false"><input type="submit" value="NO"/>
-        </form>
-        <form action="Page1d.html" data-ajax="false"><input type="submit" value="YES"/>
-        </form>
+          <table>
+          <tr>
+            <th>Date</th>
+            <th>HandyMan</th>
+            <th>Service</th>
+            <th>Contact</th>
+          </tr>
+          <tr>
+            <td>13/6/18</td>
+            <td>Kofi</td>
+            <td>Plumbing</td>
+            <td>0201111888</td>
+          </tr>
+          <tr>
+            <td>13/6/18</td>
+            <td>Kofi</td>
+            <td>Plumbing</td>
+            <td>0201111888</td>
+          </tr>
+          <tr>
+            <td>13/6/18</td>
+            <td>Kofi</td>
+            <td>Plumbing</td>
+            <td>0201111888</td>
+        </table>
 
-
-        </fieldset>
-      </form>
-    </div> 
-  </div><!-- /content -->
+        </div>
+      </div><!-- /content -->
 
       <div data-role="footer" data-position="fixed">
         <a class="" href="index.html" data-ajax="false"><i class="fa fa-home"></i></a> 
