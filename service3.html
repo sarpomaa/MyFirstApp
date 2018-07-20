@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
   <meta charset="utf-8">
   <title>phonegap & jquery mobile boilerplate</title>
   
@@ -23,14 +23,14 @@
     }
   </script>
   
-  <script src="js/lib/jquery.js"></script>
+  <!-- <script src="js/lib/jquery.js"></script> -->
   <!-- your scripts here -->
   <script src="js/app/app.js"></script>
-  <script src="js/app/bootstrap.js"></script>
-  <script src="js/lib/jquery.mobile.js"></script>
+  <!-- <script src="js/app/bootstrap.js"></script>
+    <script src="js/lib/jquery.mobile.js"></script> -->
 
-<style>
-  .searchicon {
+    <style>
+/*  .searchicon {
     position: absolute;
     right: 20%;
   }
@@ -56,23 +56,29 @@
   .button{
     width: 30%;
   }
-
+  */
+  .center{
+    text-align: center;
+  }
 </style>
-  
-  </head>
-  <body>
-    
-    <div data-role="page">
-      
-      <div data-role="header">
-        <h1>SERVICES</h1>
-        <!-- <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext"></a> -->
-        <a href="#"><i class="fa fa-arrow-alt-circle-left"></i></a>
-      </div><!-- /header -->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
 
-      <div data-role="content">
-        <center><img src="test.png" alt="intro" width="80%" height="200"/></center>
+  <div data-role="page">
 
+    <div data-role="header" data-position="fixed" style="background:#990033; text-align:center; color:white; text-shadow: none;">
+      <a class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-notext" style="background:#990033; border: none;" data-back-btn-text="Back" data-add-back-btn="true" href="service2.html">Icon only</a>
+      <h1>SERVICES</h1>
+    </div><!-- /header -->
+
+    <div style="text-align: center">
+      <img src="img/handyman.jpg" width="90%">
+    </div>
+
+<<<<<<< HEAD
     <div class="div">
       <form>
         <fieldset>
@@ -92,11 +98,40 @@
         </form>
 
           <br>
-        </fieldset>
-      </form>
-    </div> 
-  </div><!-- /content -->
+=======
+    <div data-role="content">
+      <h3 class="ui-bar ui-bar-a ui-corner-all">Kofi</h3>
+      <div class="ui-body ui-body-a ui-corner-all">
+        <p>Expertise: </p>
+        <p>Contact: </p>
+        <p>Distance: </p>
+      </div>
 
+      
+
+      <!-- <form class="center">
+        <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+          <input type="radio" name="radio-choice-h-6" id="radio-choice-h-6a" value="on" checked="checked">
+          <label for="radio-choice-h-6a">Hire</label>
+          <input type="radio" name="radio-choice-h-6" id="radio-choice-h-6b" value="off">
+          <label for="radio-choice-h-6b">Cancel</label>
+>>>>>>> c6fec9427b3cadf86589d7826fce0f405d7e068b
+        </fieldset>
+      </form> -->
+      <br>
+      <center><a class="ui-btn ui-btn-inline" href="service4.html">Hire</a>
+      <a class="ui-btn ui-btn-inline" href="service2.html">Cancel</a></center>
+    </div><!-- /content -->
+
+    <div data-role="footer" data-position="fixed" style="background:#990033; text-align:center; color:white; text-shadow: none;">
+      <a class="" href="index.html" data-ajax="false"><i class="fa fa-home"></i></a> 
+      <a class="searchicon" href="search1.html" data-ajax="false"><i class="fa fa-search"></i></a> 
+      <a class="usericon" href="profile.html" data-ajax="false"><i class="fa fa-user-circle"></i></a> 
+    </div><!-- /footer -->
+
+  </div><!-- /page -->
+
+<<<<<<< HEAD
       <div data-role="footer" data-position="fixed">
         <a class="" href="index.html" data-ajax="false"><i class="fa fa-home"></i></a> 
         <a class="searchicon" href="search1.html" data-ajax="false"><i class="fa fa-search"></i></a> 
@@ -106,4 +141,7 @@
     </div><!-- /page -->
     
   </body>
+=======
+</body>
+>>>>>>> c6fec9427b3cadf86589d7826fce0f405d7e068b
 </html>

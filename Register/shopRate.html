@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>phonegap & jquery mobile boilerplate</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+
+  <link rel="stylesheet"  href="css/jquery.mobile.structure.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.theme.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <script>
+    var userAgent = navigator.userAgent + '';
+    if (userAgent.indexOf('iPhone') > -1) {
+      document.write('<script src="js/lib/cordova-iphone.js"></sc' + 'ript>');
+      var mobile_system = 'iphone';
+    } else if (userAgent.indexOf('Android') > -1) {
+      document.write('<script src="js/lib/cordova-android.js"></sc' + 'ript>');
+      var mobile_system = 'android';
+    } else {
+      var mobile_system = '';
+    }
+  </script>
+  
+  <!-- <script src="js/lib/jquery.js"></script> -->
+  <!-- your scripts here -->
+  <script src="js/app/app.js"></script>
+  <!-- <script src="js/app/bootstrap.js"></script>
+    <script src="js/lib/jquery.mobile.js"></script> -->
+
+    <style>
+  /*.searchicon {
+    position: absolute;
+    right: 20%;
+  }
+
+  .usericon{
+    position: absolute;
+    right: 1%;
+  }
+
+  .item2{
+    position: absolute;
+    right: 20%;
+  }
+
+  .head{
+    border: 1px solid blue;
+    width: 80%;
+    text-align: center;
+  }
+
+  .tab{
+    border-spacing: 20px;
+  }
+
+  .tab1{
+    border: 1px solid blue;
+  }
+
+  *{
+    box-sizing: border-box;
+  }
+
+  .column{
+    float: left;
+    padding: 20px;
+  }
+
+  .left{
+    width: 25%;
+  }
+
+  .right{
+    width: 75%;
+    
+  }
+
+  .row{
+    content: "";
+    display: table;
+    clear: both;
+  }
+  */
+  
+</style>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+  <div data-role="page">
+
+    <div data-role="header" data-id ="pend" data-position= "fixed" style="background:#990033; text-align:center; color:white; text-shadow: none;">
+      <a class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-notext" style="background:#990033; border: none;" data-back-btn-text="Back" data-add-back-btn="true" href="handy1.html">Icon only</a>
+      <h1>JOBS</h1>
+      <!-- <a href="#"><i class="fa fa-arrow-alt-circle-left"></i></a> -->
+    </div><!-- /header -->
+
+    <div>
+      <h3><center>Ratings</center></h3>
+      <!-- <div data-role="navbar">
+        <ul>
+          <li><a href="pending.html" data-ajax="false"> Pending</a></li>
+          <li><a href="completedAct.html" data-ajax="false">Completed</a></li>
+        </ul>
+      </div> -->
+      <div data-role="collapsibleset" data-theme="b" data-content-theme="a" data-mini="true">
+        <div data-role="collapsible">
+          <h3>CustomerName</h3>
+          <p><strong>Rating: </strong></p>
+          <p><strong>Feedback/Comment: </strong></p>
+        </div>
+        <div data-role="collapsible">
+          <h3>CustomerName</h3>
+          <p><strong>Rating: </strong></p>
+          <p><strong>Feedback/Comment: </strong></p>
+        </div>
+        <div data-role="collapsible">
+          <h3>CustomerName</h3>
+          <p><strong>Rating: </strong></p>
+          <p><strong>Feedback/Comment: </strong></p>
+        </div>
+        <div data-role="collapsible">
+          <h3>CustomerName</h3>
+          <p><strong>Rating: </strong></p>
+          <p><strong>Feedback/Comment: </strong></p>
+        </div>
+        <div data-role="collapsible">
+          <h3>CustomerName</h3>
+          <p><strong>Rating: </strong></p>
+          <p><strong>Feedback/Comment: </strong></p>
+        </div>
+        <div data-role="collapsible">
+          <h3>CustomerName</h3>
+          <p><strong>Rating: </strong></p>
+          <p><strong>Feedback/Comment: </strong></p>
+        </div>
+      </div>
+  </div><!-- /content -->
+
+  <div data-role="footer" data-position="fixed" style="background:#990033; text-align:center; color:white; text-shadow: none;">
+    <a class="" href="Login.html" data-ajax="false"><i class="fa fa-home"></i></a> 
+        <!-- <a class="searchicon" href="search1.html" data-ajax="false"><i class="fa fa-search"></i></a>  -->
+        <a class="usericon" href="profile.html" data-ajax="false"><i class="fa fa-user-circle"></i></a> 
+  </div><!-- /footer -->
+
+</div><!-- /page -->
+
+</body>
+</html>

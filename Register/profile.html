@@ -23,122 +23,81 @@
     }
   </script>
   
-<<<<<<< HEAD
-  <script src="js/lib/jquery.js"></script>
-  <!-- your scripts here -->
-  <script src="js/app/app.js"></script>
-  <script src="js/app/bootstrap.js"></script>
-  <script src="js/lib/jquery.mobile.js"></script>
-
-  <style>
-=======
   <!-- <script src="js/lib/jquery.js"></script> -->
   <!-- your scripts here -->
   <script src="js/app/app.js"></script>
- <!--  <script src="js/app/bootstrap.js"></script>
+  <!-- <script src="js/app/bootstrap.js"></script>
   <script src="js/lib/jquery.mobile.js"></script> -->
 
- <!-- <style>
->>>>>>> c6fec9427b3cadf86589d7826fce0f405d7e068b
-  .searchicon {
+<!--<style>
+.searchicon {
     position: absolute;
     right: 20%;
   }
 
   .usericon{
-    position: absolute;
-    right: 1%;
+  position: absolute;
+  right: 1%;
   }
 
-  .search{
-    width: 100%;
-    position: relative;
+  .usericon1{
+  position: absolute;
+  right: 50%;
+  /*width: 40%;
+  height: 40%;*/
   }
 
-  .searchTerm{
-    float: left;
-    width: 100%;
-    border: 3px solid #00B4CC;
-    padding: 0px;
-    height: 20px;
-    border-radius: 5px;
-    outline: none;
-    /*color: #9DBFAF;*/
-  }
-
-  /*.searchTerm:focus{
-    color: #00B4CC;
-  }*/
-
-  .searchButton{
-    position: absolute;
-    right: -50px;
-    width: 40px;
-    height: 36px;
-    border: 1px solid #00B4CC;
-    /*background: #00B4CC;*/
+  .div{
+    position: relative; 
+    width: 80%; 
+    margin-left: 10%;
+    height: 350px; 
+    background-color: white;
     text-align: center;
-    /*color: #fff;*/
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 20px;
   }
 
-  .wrap{
-    width: 50%;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    /*transform: translate(-50%, -50%);*/
-<<<<<<< HEAD
+  .bold{
+    font-weight: bold;
   }
-</style>
-  
-=======
+
+  .button{
+    width: 30%;
   }-->
+
 </style>
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
->>>>>>> c6fec9427b3cadf86589d7826fce0f405d7e068b
-  </head>
+</head>
+
   <body>
     
     <div data-role="page">
       
-<<<<<<< HEAD
-      <div data-role="header">
-        <h1>SEARCH</h1>
-        <a href="#"><i class="fa fa-arrow-alt-circle-left"></i></a>
-      </div><!-- /header -->
-
-     <div data-role="content">
-        <div class="wrap">
-          <div class="search">
-            <input type="text" class="searchTerm" placeholder="What are you searching for?">
-            <button type="submit" class="searchButton">
-              <i class="fa fa-search"></i>
-            </button>
-          </div>
-        </div>
-
-      </div><!-- /content -->
-
-      <div data-role="footer" data-position="fixed">
-=======
       <div data-role="header" data-position="fixed" style="background:#990033; text-align:center; color:white; text-shadow: none;">
         <a class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-notext" style="background:#990033; border: none;" data-back-btn-text="Back" data-add-back-btn="true" href="search1.html">Icon only</a>
-        <h1>SEARCH</h1>
+        <h1>USER PROFILE</h1>
+        <!-- <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext"></a> -->
         <!-- <a href="#"><i class="fa fa-arrow-alt-circle-left"></i></a> -->
       </div><!-- /header -->
 
-     <div data-role="content">
-      <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Search items...">
+      <div data-role="content">
+        <a class="usericon1" href="#"><i class="fa fa-user-circle"></i></a> 
 
-      </div><!-- /content -->
+    <div class="div">
+          
+          <p class="bold">Name: </p>
+          <p class="bold">Preferences: </p>
+          <p class="bold">Help: </p>
+          <p class="bold">Requests: </p>
+          <p class="bold">Settings: </p>
+          <p class="bold">Logout: </p>
+          <br>
+          
+    </div> 
+  </div><!-- /content -->
 
       <div data-role="footer" data-position="fixed" style="background:#990033; text-align:center; color:white; text-shadow: none;">
->>>>>>> c6fec9427b3cadf86589d7826fce0f405d7e068b
         <a class="" href="index.html" data-ajax="false"><i class="fa fa-home"></i></a> 
         <a class="searchicon" href="search1.html" data-ajax="false"><i class="fa fa-search"></i></a> 
         <a class="usericon" href="profile.html" data-ajax="false"><i class="fa fa-user-circle"></i></a> 

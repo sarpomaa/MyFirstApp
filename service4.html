@@ -23,14 +23,14 @@
     }
   </script>
   
-  <script src="js/lib/jquery.js"></script>
+  <!-- <script src="js/lib/jquery.js"></script> -->
   <!-- your scripts here -->
   <script src="js/app/app.js"></script>
-  <script src="js/app/bootstrap.js"></script>
-  <script src="js/lib/jquery.mobile.js"></script>
+  <!-- <script src="js/app/bootstrap.js"></script>
+  <script src="js/lib/jquery.mobile.js"></script> -->
 
 <style>
-  .searchicon {
+  /*.searchicon {
     position: absolute;
     right: 20%;
   }
@@ -51,24 +51,29 @@
 
   .bold{
     font-weight: bold;
-  }
+  }*/
 
 </style>
-  
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
   </head>
   <body>
     
     <div data-role="page">
       
-      <div data-role="header">
+      <div data-role="header" data-position="fixed" style="background:#990033; text-align:center; color:white; text-shadow: none;">
+        <a class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-notext" style="background:#990033; border: none;" data-back-btn-text="Back" data-add-back-btn="true" href="service3.html">Icon only</a>
         <h1>THANK YOU</h1>
         <!-- <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext"></a> -->
-        <a href="#"><i class="fa fa-arrow-alt-circle-left"></i></a>
+        <!-- <a href="#"><i class="fa fa-arrow-alt-circle-left"></i></a> -->
       </div><!-- /header -->
 
+      <div style="text-align: center">
+        <img src="img/thank.jpg" width="90%">
+      </div>
+
       <div data-role="content">
-        <h1><center>MAP</center></h1>
-        <center><img src="test.png" alt="intro" width="80%" height="200"/></center>
 
     <div class="div">
       <form>
@@ -76,14 +81,24 @@
           <legend class="bold"><center>THANK YOU</center></legend>
           <p class="bold">Your request has been processed. Kofi will contact you. Thank you </p>
           <br><br>
+<<<<<<< HEAD
           <form action="Page1b.html" data-ajax="false"><input type="submit" value="CONTINUE SHOPPING"/></form>
           <form action="Page1b.html" data-ajax="false"><input type="submit" value="CONTINUE SHOPPING"/></form>
+=======
+          <center><a class="ui-btn ui-btn-inline" href="service1.html">CONTINUE</a></center>
+          <!-- <form action="Page1b.html" data-ajax="false"><input type="submit" value="CONTINUE"/></form>
+          <form action="Page1b.html" data-ajax="false"><input type="submit" value="CONTINUE"/></form> -->
+>>>>>>> c6fec9427b3cadf86589d7826fce0f405d7e068b
         </fieldset>
       </form>
     </div> 
   </div><!-- /content -->
 
+<<<<<<< HEAD
       <div data-role="footer" data-position="fixed">
+=======
+      <div data-role="footer" data-position="fixed" style="background:#990033; text-align:center; color:white; text-shadow: none;">
+>>>>>>> c6fec9427b3cadf86589d7826fce0f405d7e068b
         <a class="" href="index.html" data-ajax="false"><i class="fa fa-home"></i></a> 
         <a class="searchicon" href="search1.html" data-ajax="false"><i class="fa fa-search"></i></a> 
         <a class="usericon" href="profile.html" data-ajax="false"><i class="fa fa-user-circle"></i></a> 

@@ -23,14 +23,14 @@
     }
   </script>
   
-  <script src="js/lib/jquery.js"></script>
+  <!-- <script src="js/lib/jquery.js"></script> -->
   <!-- your scripts here -->
   <script src="js/app/app.js"></script>
-  <script src="js/app/bootstrap.js"></script>
-  <script src="js/lib/jquery.mobile.js"></script>
+  <!-- <script src="js/app/bootstrap.js"></script>
+  <script src="js/lib/jquery.mobile.js"></script> -->
 
   <style>
-.searchicon {
+/*.searchicon {
     position: absolute;
     right: 20%;
   }
@@ -53,21 +53,28 @@
   .tab{
     border-spacing: 20px;
   }
-
+*/
 </style>
+   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
   
   </head>
   <body>
     
     <div data-role="page">
       
-      <div data-role="header">
+      <div data-role="header" data-position="fixed" style="background:#990033; text-align:center; color:white; text-shadow: none;">
+        <a class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-notext" style="background:#990033; border: none;" data-back-btn-text="Back" data-add-back-btn="true" href="index.html">Icon only</a>
         <h1>SERVICES</h1>
-        <!-- <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext"></a> -->
-        <a href="#"><i class="fa fa-arrow-alt-circle-left"></i></a>
       </div><!-- /header -->
 
+      <div style="text-align: center">
+        <img src="img/handy.jpg" width="90%">
+      </div>
+
       <div data-role="content">
+<<<<<<< HEAD
         <center><img src="test.png" alt="intro" width="80%" height="200"/></center>
         <table class="tab">
           <tr>
@@ -104,6 +111,19 @@
       </div><!-- /content -->
 
       <div data-role="footer" data-position="fixed">
+=======
+        <div class="ui-grid-a">
+          <div class="ui-block-a"><a class="ui-shadow ui-btn ui-corner-all" href="service2.html" data-ajax="false">Carpentry</a></div>
+          <div class="ui-block-b"><a class="ui-shadow ui-btn ui-corner-all" href="service2.html" data-ajax="false">Electrical</a></div>
+          <div class="ui-block-a"><a class="ui-shadow ui-btn ui-corner-all" href="service2.html" data-ajax="false">Plumbing</a></div>
+          <div class="ui-block-b"><a class="ui-shadow ui-btn ui-corner-all" href="service2.html" data-ajax="false">Gardening</a></div>
+          <div class="ui-block-a"><a class="ui-shadow ui-btn ui-corner-all" href="service2.html" data-ajax="false">Cleaning</a></div>
+          <div class="ui-block-b"><a class="ui-shadow ui-btn ui-corner-all" href="service2.html" data-ajax="false">Painting</a></div>
+        </div>
+      </div><!-- /content -->
+
+      <div data-role="footer" data-position="fixed" style="background:#990033; text-align:center; color:white; text-shadow: none;">
+>>>>>>> c6fec9427b3cadf86589d7826fce0f405d7e068b
         <a class="" href="index.html" data-ajax="false"><i class="fa fa-home"></i></a> 
         <a class="searchicon" href="search1.html" data-ajax="false"><i class="fa fa-search"></i></a> 
         <a class="usericon" href="profile.html" data-ajax="false"><i class="fa fa-user-circle"></i></a> 
